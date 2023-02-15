@@ -1,0 +1,33 @@
+:root {
+  --main-color: #ecf2ff;
+  --secondary-color: #e3dffd;
+  --darker-pink: #e5d1fa;
+  --light-yellow: #fff4d2;
+}
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-img {
+  width: 30px;
+  height: 100%;
+  object-fit: contain;
+}
+
+.nav-main {
+  background-color: var(--main-color);
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 20px;
+  padding: 0 20px;
+}
+
+.nav-main h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--darker-pink);
+  margin-left: 10px;
+  letter-spacing: 3px;
+}
