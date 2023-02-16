@@ -83,6 +83,8 @@ header {
 }
 .pokemon-name h3 {
   font-weight: bold;
+  border-bottom: 8px solid var(--light-yellow);
+
   width: fit-content;
   color: var(--text-color);
 }
