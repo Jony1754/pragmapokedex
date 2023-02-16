@@ -112,7 +112,7 @@ header {
 .pokedex__stats-title {
   font-weight: bold;
 }
-.main-content {
+.pokedex {
   display: block;
   position: relative;
   align-content: center;
@@ -121,7 +121,7 @@ header {
   flex-direction: column;
   justify-content: center;
 }
-.main-content figure {
+.pokedex figure {
   width: 150px;
   margin: 0 auto;
   overflow: hidden;
@@ -201,6 +201,7 @@ header {
   width: 50px;
   padding: 10px;
   border-radius: 10px;
+  flex-grow: 1;
 }
 .others__list-item img {
   width: 100%;
@@ -217,4 +218,30 @@ header {
   text-align: center;
   border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+@media screen and (min-width: 768px) {
+  .pokedex {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-self: center;
+    padding: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .others__list-item {
+    max-width: 15%;
+  }
+
+  .pokedex__stats {
+    padding: 50px;
+    width: 40%;
+    max-width: 420px;
+  }
+  .pokedex__character {
+    width: 50%;
+  }
 }
