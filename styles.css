@@ -7,14 +7,17 @@
 }
 * {
   font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html,
-body {
-  margin: 0px;
+html {
   height: 100%;
 }
-
+body {
+  min-height: 100%;
+}
 .nav-img {
   width: 30px;
   height: 100%;
@@ -29,6 +32,7 @@ header {
   height: 70px;
   display: flex;
   width: 100%;
+  padding: 10px;
   margin-bottom: 20px;
   justify-content: center;
   align-items: center;
@@ -44,7 +48,6 @@ header {
   width: 100%;
   font-weight: bold;
   color: var(--text-color);
-  margin-left: 10px;
   letter-spacing: 3px;
 }
 
@@ -89,7 +92,6 @@ header {
   margin: 0 auto;
   flex-direction: column;
   justify-content: center;
-  border: 2px solid red;
 }
 .main-content figure {
   width: 150px;
@@ -109,7 +111,8 @@ header {
 
 .others {
   display: flex;
-
+  position: absolute;
+  bottom: 0;
   justify-content: space-between;
   align-items: center;
   border-radius: 50px 50px 0 0;
