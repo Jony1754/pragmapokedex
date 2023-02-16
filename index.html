@@ -16,25 +16,25 @@
   </head>
   <body>
     <header>
-      <nav class="nav-main">
-        <img class="nav-img" src="./assets/pokebola.png" alt="" />
-        <h1>Pokedex</h1>
+      <nav class="navbar">
+        <img class="navbar__img" src="./assets/pokebola.png" alt="" />
+        <h1 class="navbar__title">Pokedex</h1>
       </nav>
     </header>
-    <main class="main-content">
-      <section class="content-name">
-        <div class="name-container name">
-          <img src="./assets/globo.png" alt="" />
+    <main class="main-content pokedex">
+      <section class="content-name pokedex__character">
+        <div class="pokemon-name">
+          <img src="./assets/globo.png" alt="" class="pokedex__character-img" />
           <h3>Jigglypuff</h3>
         </div>
-        <figure>
-          <img class="img-pokemon" src="./assets/sample3.png" alt="" />
+        <figure class="pokemon-picture">
+          <img class="pokemon-picture__img" src="./assets/sample3.png" alt="" />
         </figure>
       </section>
-      <section class="content-stats">
-        <h4>STATS</h4>
+      <section class="content-stats pokedex__stats">
+        <h4 class="pokedex__stats-title">STATS</h4>
         <hr />
-        <ul class="pokelist">
+        <ul class="pokedex__stats-list">
           <li>
             <strong>altura: </strong>
             <p>0.7m</p>
@@ -54,6 +54,25 @@
         </ul>
       </section>
     </main>
-    <footer class="others"></footer>
+    <footer class="others">
+      <article class="others__container">
+        <h5 class="others__title">others</h5>
+        <div class="others__list">
+          <div class="others__list-item">
+            <img src="./assets/sample1.png" alt="" />
+          </div>
+          <div class="others__list-item">
+            <img src="./assets/sample2.png" alt="" />
+          </div>
+          <div class="others__list-item">
+            <img src="./assets/sample3.png" alt="" />
+          </div>
+          <div class="others__list-item">
+            <img src="./assets/sample0.png" alt="" />
+          </div>
+          </div>
+        </div>
+      </article>
+    </footer>
   </body>
 </html>
